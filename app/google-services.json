@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "564129794508",
+    "firebase_url": "https://cuoiky-afee0.firebaseio.com",
+    "project_id": "cuoiky-afee0",
+    "storage_bucket": "cuoiky-afee0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:564129794508:android:c67acf835981a5b5c0f569",
+        "android_client_info": {
+          "package_name": "com.tienmonkey.cuoiky"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "564129794508-mfd9j5evfpcpiu03cofeojdrjsb8j0pp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1nhV82WBF6Lh2UFDsr3_XOAfGfFS6JA8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "564129794508-mfd9j5evfpcpiu03cofeojdrjsb8j0pp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

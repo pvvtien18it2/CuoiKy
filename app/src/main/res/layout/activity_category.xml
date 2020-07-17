@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.CategoryActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Categories"
+        android:textSize="30sp"
+        android:layout_marginTop="64dp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        android:layout_gravity="center"
+        tools:layout_editor_absoluteX="177dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginTop="64dp">
+
+        <ImageButton
+            android:id="@+id/imLaptop"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/laptop"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <ImageButton
+            android:id="@+id/imMobile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/mobile"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <ImageButton
+            android:id="@+id/imHeadset"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/headset"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+        <ImageButton
+            android:id="@+id/imWatch"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/watch"
+            tools:layout_editor_absoluteX="72dp"
+            tools:layout_editor_absoluteY="250dp" />
+    </LinearLayout>
+
+</LinearLayout>

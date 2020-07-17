@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/AppBarMenu"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DDDDDD"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                        <ImageButton
+                            android:id="@+id/imMenu"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:background="@drawable/input"
+                            android:src="@drawable/menu" />
+                </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/navigation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="bottom"
+                    android:background="?android:attr/windowBackground"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:itemBackground="@color/bgBottomNavigation"
+                    app:itemIconTint="@android:color/white"
+                    app:itemTextColor="@android:color/white"
+                    app:layout_scrollFlags="scroll|enterAlways|snap"
+                    app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+                    app:menu="@menu/menu_bottom"
+                    tools:ignore="MissingConstraints"/>
+        </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
