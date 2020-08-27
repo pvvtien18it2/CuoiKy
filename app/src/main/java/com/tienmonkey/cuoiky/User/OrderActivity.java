@@ -50,7 +50,6 @@ public class OrderActivity extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
 
         String number = Paper.book().read(Prevalent.PhoneKey);
-        Toast.makeText(this, number, Toast.LENGTH_SHORT).show();
         ordersRef = FirebaseDatabase.getInstance().getReference().child("Order list").child("User View").child(number);
 
         rvShowOrdersItem = findViewById(R.id.rvShowOrdersItem);

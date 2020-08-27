@@ -85,7 +85,6 @@ public class LoginActivity extends AppCompatActivity {
                     }else{
                         if (userData.getAdmin().equals("1")){
                             startActivity(new Intent(LoginActivity.this, HomeAdminActivity.class));
-                            Toast.makeText(LoginActivity.this, "Admin", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
                             Prevalent.crurrentOnlineUser = userData;
                             Paper.book().write(Prevalent.UsernameKey, userData.getName());
@@ -93,7 +92,6 @@ public class LoginActivity extends AppCompatActivity {
                             Paper.book().write(Prevalent.AddressKey, userData.getAddress());
                         }else{
                             startActivity(new Intent(LoginActivity.this, HomeUserActivity.class));
-                            Toast.makeText(LoginActivity.this, "Done", Toast.LENGTH_SHORT).show();
                             progressDialog.dismiss();
                             Prevalent.crurrentOnlineUser = userData;
                             Paper.book().write(Prevalent.UsernameKey, userData.getName());

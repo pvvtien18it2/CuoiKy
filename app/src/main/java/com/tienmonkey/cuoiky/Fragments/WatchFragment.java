@@ -96,8 +96,6 @@ public class WatchFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_watch, container, false);
 
-//        imMenu = view.findViewById(R.id.imMenu);
-
         FirebaseApp.initializeApp(container.getContext());
         productRef = FirebaseDatabase.getInstance().getReference().child("Products").orderByChild("category").equalTo("watch");
 
@@ -107,13 +105,6 @@ public class WatchFragment extends Fragment {
         recycler_view.setLayoutManager(layoutManager);
 
         adapterWatch();
-
-//        imMenu.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                showPopup(v);
-//            }
-//        });
 
         return view;
     }
@@ -140,38 +131,4 @@ public class WatchFragment extends Fragment {
             }
         });
     }
-
-//    private void showPopup(View v) {
-//        PopupMenu popup = new PopupMenu(getContext(), v);
-//        MenuInflater inflater = popup.getMenuInflater();
-//        inflater.inflate(R.menu.menu_user, popup.getMenu());
-//
-//        popup.show();
-//
-//        popup.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-//            @Override
-//            public boolean onMenuItemClick(MenuItem item) {
-//                switch (item.getItemId()) {
-//                    case R.id.nav_profile:
-////                        AddAdmin();
-//                        return true;
-//                    case R.id.nav_order:
-////                        AddNewProduct();
-//                        return true;
-//                    case R.id.nav_logout:
-//                        HomeUserActivity homeUserActivity = new HomeUserActivity();
-//                        homeUserActivity.logout(getContext());
-//                        return true;
-//                    default:
-//                        return false;
-//                }
-//            }
-//        });
-//    }
-//    private void logout(){
-//        Paper.book().destroy();
-//        startActivity(new Intent(getContext(), MainActivity.class)
-//                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK ));
-//        System.exit(0);
-//    }
 }

@@ -48,7 +48,7 @@ public class OrdersAdapter extends RecyclerView.Adapter<OrdersAdapter.OrdersHold
         Orders orders = orders_item.get(position);
 
         holder.tvNameProduct.setText(orders.getName());
-        holder.tvPriceProduct.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(Integer.parseInt(orders.getPrice())) +" VND");
+        holder.tvPriceProduct.setText(orders.getPrice());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

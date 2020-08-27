@@ -42,8 +42,6 @@ public class OrderDetailActivity extends AppCompatActivity {
         Paper.init(this);
 
         id = getIntent().getExtras().get("id").toString();
-        Toast.makeText(this, id, Toast.LENGTH_SHORT).show();
-        Log.d("kiemtra", id);
 
         tvBack = findViewById(R.id.tvBack);
         tvOrderName = findViewById(R.id.tvOrderName);
@@ -72,7 +70,7 @@ public class OrderDetailActivity extends AppCompatActivity {
                         if (snapshot.exists()){
                             Orders orders = snapshot.getValue(Orders.class);
                             tvOrderName.setText(orders.getName());
-                            tvOrderPrice.setText(NumberFormat.getNumberInstance(Locale.getDefault()).format(Integer.parseInt(orders.getPrice())) +" VND");
+                            tvOrderPrice.setText(orders.getPrice());
                             tvOrderPhone.setText(orders.getPhone());
                             tvOrderTime.setText(orders.getTime());
                             tvOrderDay.setText(orders.getDate());
